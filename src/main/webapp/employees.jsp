@@ -50,7 +50,7 @@
                 <td>${empl.passport.indID}</td>
                 <td>${empl.updatedTs}</td>
                 <td>${empl.createdTs}</td>
-                <c:if test="${ShasRole(request, 'Admin', 'Manager')}">
+                <c:if test="${hasRole(request, 'Admin', 'Manager')}">
                     <td><a href="employees?action=U&id=${empl.id}"> UPDATE </a></td>
                 </c:if>
                 <c:if test="${hasRole(request, 'Admin', 'Manager')}">
